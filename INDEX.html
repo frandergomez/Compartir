@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+<head>
+	<title>Formulario de contacto</title>
+	<style>
+		label {
+		  display: inline-block;
+		  width: 150px;
+		  text-align: right;
+		  margin-right: 10px;
+		}
+
+		input[type="text"], select, textarea {
+		  display: inline-block;
+		  width: 250px;
+		  margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Solicitud</h1>
+	<form>
+		<div>
+		<label for="general">Quien lo solicita:</label>
+		<input type="text" id="general" name="general"><br><br>
+
+		<label for="asunto">Asunto:</label>
+		<input type="text" id="asunto" name="asunto"><br><br>
+
+		<label for="prioridad">Prioridad:</label>
+		<select id="prioridad" name="prioridad">
+			<option value="alta">Alta</option>
+			<option value="media">Media</option>
+			<option value="baja">Baja</option>
+		</select><br><br>
+
+		<label for="area">Area:</label>
+		<select id="area" name="area">
+			<option value="Medica">Medica</option>
+			<option value="Enfermeria">Enfermeria</option>
+			<option value="Solicitud">Solicitud</option>
+		</select><br><br>
+		</div>
+
+		<div>
+        <h2>Descripcion:</h2>
+		<label for="descripcion"></label><br><br>
+		<textarea id="descripcion" name="descripcion" rows="10" cols="50"></textarea><br><br>
+
+		<input type="submit" value="Enviar">
+		</div>
+
+		<div>
+			<label>
+				<img src="https://th.bing.com/th/id/OIP.ul9VPJkzCUvcCC7svYsMtgHaHa?pid=ImgDet&rs=1" alt="Imagen">
+			  </label>
+			</div>
+
+	</form>
+</body>
+</html>
